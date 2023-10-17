@@ -1,0 +1,16 @@
+{
+  "name": "bookmarks",
+  "version": "0.0.1",
+  "description": "Projeto de gerenciamento de favoritos",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Phill Anselmo",
+  "license": "GPL",
+  "devDependencies": {
+    "electron": "^27.0.0"
+  }
+}
