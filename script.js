@@ -1,6 +1,14 @@
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
+const myModal = document.getElementById('addBookmarkModal')
+const myInput = document.getElementById('inputAddUrl')
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
+myModal.addEventListener('show.bs.modal', () => {
+  myInput.focus();
 })
+
+
+window.addEventListener('keydown', (event) => {
+		if(event.code === 'keyA' && event.ctrlKey) {
+
+		}
+	}
+);
