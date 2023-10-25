@@ -7,7 +7,8 @@ const loadMainWindow = () => {
 		height: 800,
 		webPreferences: {
 			nodeIntegration: true
-		}
+		},
+		autoHideMenuBar: true,
 	});
 
 	mainWindow.loadFile(path.join(__dirname, "index.html"));
