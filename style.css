@@ -1,5 +1,87 @@
 
 
 .bg-nav-primary {
-	background-color: #000;
+	background-color: #1278de;
+}
+
+.fg-nav-primary, .fg-nav-primary:hover {
+	color: #eee;
+}
+
+.btn-cross {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px !important;
+    height: 36px !important;
+}
+
+.plus-container {
+    border-radius: 6pt;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+}
+
+.bg-primary {
+    background: #097AE2;
+}
+
+.bg-grey {
+    background: #949494;
+}
+
+.bg-border-primary {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #097AE2;
+}
+
+.white-text {
+    color: #fff;
+    /**font-family: "Share";*/
+}
+
+.white-text:hover {
+    color: #eee;
+    /**font-family: "Share";*/
+}
+
+.white-text:active {
+    color: #ddd;
+    /**font-family: "Share";*/
+}
+
+.align-buttons {
+    align-items: center;
+    justify-content: center;
+}
+
+.rounded-corners {
+    border-radius: 2em;
+}
+
+.rounded-bottom-corners {
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-left-radius: 1.7em;
+    border-top-right-radius: 1.7em;
+}
+
+.modal-input-styling {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #282828;
+    margin-bottom: 0.5em;
+}
+
+.btn-min-width {
+    min-width: 30%;
+    border-radius: 2em;
 }
