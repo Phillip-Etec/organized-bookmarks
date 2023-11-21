@@ -15,7 +15,7 @@
         <nav class="navbar bg-nav-primary">
             <div class="container-fluid">
                 <span class="navbar-brand mb-0 h1  fg-nav-primary">Favoritos</span>
-                <button class="plus-container"  data-bs-toggle="modal" data-bs-target="#addBookmarkModal">
+                <button class="plus-container"  data-bs-toggle="modal" data-bs-target="#addbookmarkmodal">
                     <svg
                          class="plus-icon"
                         width="24"
@@ -87,10 +87,11 @@
                                         .
                                     </a>
 
+									<!--<button class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#editbookmarkmodal">-->
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                      <li><button class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#editBookmarkModal">Editar</button></li>
+                                      <li><button class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#deleteBookmarkModal">Deletar</button></li>
+                                      <li><button class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#propertiesBookmarkModal">Propriedades</button></li>
                                     </ul>
                                 </div>
                             </div>
@@ -109,6 +110,56 @@
             </div>
         </div>
         
+        <div class="modal fade" id="editBookmarkModal" tabindex="-1" aria-labelledby="editBookmarkModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="bg-border-primary modal-content rounded-corners">
+              <div class="modal-header bg-primary rounded-bottom-corners">
+                <h1 class="modal-title fs-5 white-text" id="editBookmarkModalLabel">Editar um favorito</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control modal-input-styling" id="inputAddUrl" aria-describedby="urlHelp" placeholder="URL (necessária)">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control modal-input-styling" id="inputAddName" aria-describedby="nameHelp" placeholder="Nome">
+                  </div>
+                    <div class="form-group">
+                    <input type="text" class="form-control modal-input-styling" id="inputAddDescription" aria-describedby="descriptionHelp" placeholder="Descrição">
+                  </div>
+                    <div class="form-group">
+                    <input type="text" class="form-control modal-input-styling" id="inputAddTags" aria-describedby="tagsHelp" placeholder="Tags">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer align-buttons">
+                <button type="button" class="btn btn-secondary bg-grey text-white btn-min-width" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary bg-primary text-white btn-min-width">Editar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Modal for deleting bookmark -->
+        <div class="modal fade bg-warning" id="deleteBookmarkModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="deleteBookmarkModalLabel">Deletar favorito</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Deseja mesmo deletar o favorito <nome>?
+              </div>
+              <div class="modal-footer align-buttons">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger">Deletar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
