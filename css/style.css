@@ -103,4 +103,21 @@
 .bookmark-img {
     margin-left: auto;
     margin-right: auto;
+    border-top-left-radius: 2em !important;
+    border-bottom-right-radius: 2em;
+}
+
+.borderless {
+    border-style: none;
+    border: 0px solid;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 0.5em !important;
+}
+
+.bring-to-front {
+    z-index: 1;
+}
+
+.bg-bookmark {
+    background-color: #CDCDCD;
 }
